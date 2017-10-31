@@ -1,0 +1,153 @@
+/**
+ * @author  wuyunfei
+ * @date    2017-9-27
+ * @version V 1.0
+ * @email   1151815317@qq.com
+ */
+
+html {
+    font-size: 40px;
+}
+
+
+ /* 移动优先 */
+ /* 默认样式是给最小屏幕的 */
+
+ // 导航部分
+
+@nav-height: 51px; 
+
+header a.logo {
+	width: 66px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	margin-left: 15px;
+	display: inline-block;
+	box-sizing: border-box;
+    img {
+    	display: block;
+    } 
+}
+
+header a.menu {
+	font-size: 34px;
+	color: #66ccff;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+}
+
+.nav-wrapper {
+	width: 100%;
+	height: @nav-height;
+	padding-right: 15px;
+	padding-top: 6px;
+	position: relative;
+    box-sizing: border-box;
+}
+
+.nav-wrapper ul {
+	margin-top: 50px;
+	font-size: 14px;
+	color: #333;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	li {
+		padding: 8px 0px;
+		box-sizing: border-box;
+		position: relative;
+		&:active {
+				background: #eee;
+				color: #66ccff;
+			}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 0 16px;
+			color: inherit;
+		}
+	}
+}
+
+.about-me {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.h160 {
+		height: 160px!important;
+		opacity: 1!important;
+	}
+	.nav-wrapper ul {
+		height: 0px;
+		opacity: 0;
+		transition: all .5s linear;
+		background: #fff;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-wrapper {
+		width: 750px;
+		height: @nav-height;
+		margin: 0 auto;
+	}
+	.nav-wrapper ul {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: @nav-height;
+		margin-top: -6px;
+		max-width: 450px;
+		float: left;
+		margin-left: 15px;
+		li {
+			padding: 0px 0px;
+			height: 100%;
+			line-height: @nav-height;
+			&:hover {
+				background: #eee;
+				color: #337ab7;
+			}
+		}
+	}
+	header a.menu {
+		display: none;
+	}
+
+	.about-me {
+		display: block;
+		float: right;
+		height: @nav-height;
+		font-size: 14px;
+		color: #333;
+		line-height: @nav-height;
+		margin-top: -6px;
+		padding: 0 15px;
+		&:hover {
+			background: #eee;
+			color: #337ab7;
+
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav-wrapper {
+		width: 970px;
+		height: @nav-height;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav-wrapper {
+		width: 1170px;
+		height: @nav-height;
+		margin: 0 auto;
+	}
+}
+

@@ -1,0 +1,590 @@
+.op0 {
+    opacity: 0;
+    transition: all .8s;
+}
+
+.section {
+    overflow: hidden;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.active .fadeInUp {
+    animation: fadeInUp 1s ease-in forwards;
+}
+
+.active .fadeInUpLater {
+    animation: fadeInUp 1s ease-in 1.5s forwards;
+}
+
+.active .fadeInUpStar {
+    animation: fadeInUp 1s ease-in 3s forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.active .fadeInLeft {
+    animation: fadeInLeft .8s ease-in 1.2s forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.active .fadeInRight {
+    animation: fadeInRight .8s ease-in 1.5s forwards;
+}
+
+@keyframes floatingLeft {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(-1000px, 0, 0);
+        transform: translate3d(-1000px, 0, 0);
+    }
+}
+
+.active .floatingLeft {
+    animation: floatingLeft 30s infinite linear 1.5s;
+}
+
+@keyframes floatingRight {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(800px, 0, 0);
+        transform: translate3d(800px, 0, 0);
+    }
+}
+
+.active .floatingRight {
+    animation: floatingRight 30s infinite linear 1.5s;
+}
+
+@keyframes floatingAround {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    33% {
+        opacity: 1;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    66% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.active .floatingAround {
+    animation: floatingAround 10s infinite linear 1.5s;
+}
+
+@keyframes circleAround {
+    from {
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: roate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.active .circleAround {
+    animation: circleAround 2.8s ease-in-out 1s forwards;
+}
+
+@keyframes showView {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.active .showView {
+    animation: showView .8s ease-in 1s forwards;
+}
+
+@keyframes showImmediate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.active .showImmediate {
+    animation: showImmediate 1.5s ease-in forwards;
+}
+
+@keyframes fadeInPerson {
+    from {
+        opacity: 1;
+        bottom: -300px;
+        right: -300px;
+    }
+    to {
+        opacity: 1;
+        bottom: 30px;
+        right: 50px;
+    }
+}
+
+.active .fadeInPerson {
+    animation: fadeInPerson .7s ease-in 1.5s forwards;
+}
+
+@keyframes fadeInIconTR {
+    from {
+        opacity: 1;
+        top: 5px;
+        right: 16px;
+    }
+    to {
+        opacity: 1;
+        top: -15px;
+        right: -60px;
+    }
+}
+
+.active .fadeInIconTR {
+    animation: fadeInIconTR .8s ease-in 1.5s forwards;
+}
+
+@keyframes fadeInIconTL {
+    from {
+        opacity: 1;
+        top: 55px;
+        left: -20px;
+    }
+    to {
+        opacity: 1;
+        top: 35px;
+        left: -150px;
+    }
+}
+
+.active .fadeInIconTL {
+    animation: fadeInIconTL .8s ease-in 1.5s forwards;
+}
+
+@keyframes fadeInIconBR {
+    from {
+        opacity: 1;
+        bottom: 35px;
+        right: 8px;
+    }
+    to {
+        opacity: 1;
+        bottom: 10px;
+        right: -95px;
+    }
+}
+
+.active .fadeInIconBR {
+    animation: fadeInIconBR .8s ease-in 1.5s forwards;
+}
+
+@keyframes fadeInIconBL {
+    from {
+        opacity: 1;
+        bottom: 15px;
+        left: 12px;
+    }
+    to {
+        opacity: 1;
+        bottom: -5px;
+        left: -65px;
+    }
+}
+
+.active .fadeInIconBL {
+    animation: fadeInIconBL .8s ease-in 1.5s forwards;
+}
+
+@keyframes shineStar {
+    from {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.active .shineStar {
+    animation: shineStar 2s ease-in 2.3s forwards;
+}
+
+@keyframes btnShake {
+    from,
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.active .btnShake {
+    animation: btnShake 1.5s ease-in 3s forwards;
+}
+
+
+// 第1屏
+
+@keyframes planeIn {
+    from {
+        opacity: 0;
+        right: 50px;
+        top: 50px;
+    }
+
+    to {
+        opacity: 1;
+        right: -104px;
+        top: -50px;
+    }
+}
+
+
+.section0-text {
+    margin: 0 auto;
+    position: relative;
+    width: 592px;
+    height: 125px;
+    background: url(../images/fullpage/section0-text.png) no-repeat;
+    .section0-plane {
+        opacity: 0;
+        position: absolute;
+        right: -104px;
+        top: -50px;
+    }
+}
+
+.active .animatedPlane {
+    animation: planeIn 1s ease-in .8s forwards;
+}
+
+.mt50 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+// 第2屏
+#section1 {
+    div:nth-child(1)>img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// 第3屏
+
+#section2 {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        width: 755px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section2-right {
+        position: absolute;
+        right: -100px;
+        top: -110px;
+        z-index: 999;
+    }
+
+    .section2-left {
+        position: absolute;
+        left: -150px;
+        top: 85px;
+        z-index: 999;
+    }
+
+    .section2-main {
+        position: relative;
+        z-index: 99;
+    }
+
+    .section2-shadow {
+        position: absolute;
+        left: -24px;
+        bottom: -160px;
+        z-index: 1;
+    }
+}
+
+// 第4屏
+
+#section3 {
+    position: relative;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .wrap-top {
+        width: 617px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .wrap-main {
+        width: 380px;
+        height: 380px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .section3-cloud {
+        position: absolute;
+        right: -100px;
+        top: 0;
+        z-index: 999;
+    }
+
+    .section3-circle {
+        position: relative;
+        z-index: 99;
+    }
+
+    .section3-center-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -61px!important;
+        margin-top: -39px!important;
+        z-index: 999;
+    }
+
+    .section3-shadow {
+        position: absolute;
+        z-index: 9;
+        left: 75px;
+        top: 80px;
+    }
+
+    .section3-star1 {
+        position: absolute;
+        z-index: 9;
+        right: 31px;
+        top: 15px;
+    }
+
+    .section3-star2 {
+        position: absolute;
+        z-index: 9;
+        left: -76px;
+        bottom: 143px;
+    }
+}
+
+
+// 第5屏
+
+
+
+#section4 {
+    overflow: hidden;
+    position: relative;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .section4-circle {
+        position: relative;
+        z-index: 999;
+    }
+
+    .wrap-main {
+        position: relative;
+        width: 360px;
+        height: 360px;
+        margin: 65px auto 0;
+        z-index: 999;
+    }
+
+    .section4-person {
+        position: absolute;
+        bottom: -300px;
+        right: -300px;
+        z-index: 9999;
+    }
+
+    .section4-icon-tl {
+        position: absolute;
+        top: 55px;
+        left: -50px;
+        z-index: 99;
+    }
+
+    .section4-icon-tr {
+        position: absolute;
+        top: 5px;
+        right: -14px;
+        z-index: 99;
+    }
+
+    .section4-icon-bl {
+        position: absolute;
+        bottom: 15px;
+        left: -18px;
+        z-index: 99;
+    }
+
+    .section4-icon-br {
+        position: absolute;
+        bottom: 35px;
+        right: -22px;
+        z-index: 99;
+    }
+
+    .section4-star1 {
+        position: absolute;
+        top: 2px;
+        right: 75px;
+        z-index: 9999;
+    }
+
+    .section4-star2 {
+        position: absolute;
+        bottom: 130px;
+        left: 40px;
+        z-index: 9999;
+        z-index: 9999;
+    }
+
+    .section4-star3 {
+        position: absolute;
+        bottom: 77px;
+        right: 50px;
+        z-index: 9999;
+        -webkit-transform: scale(.75);
+        -ms-transform: scale(.75);
+        -o-transform: scale(.75);
+        transform: scale(.75);
+    }
+
+    .wrap-bt-pic {
+        position: absolute;
+        bottom: 0;
+        width: 1074px;
+        height: 97px;
+        left: 50%;
+        margin-left: -537px;
+    }
+
+    .btn-bottom {
+        position: relative;
+        z-index: 99999;
+        display: inline-block;
+        width: 223px;
+        height: 54px;
+    }
+
+    .btn-job {
+        background: url(../images/fullpage/section4-btn-job.png) no-repeat;
+        margin-right: 50px;
+    }
+
+    .btn-partner {
+        background: url(../images/fullpage/section4-btn-partner.png) no-repeat;
+    }
+
+    .mt55 {
+        margin-top: 55px;
+    }
+
+    .wrap-bottom {
+        text-align: center;
+    }
+}
+

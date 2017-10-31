@@ -1,0 +1,332 @@
+/**
+ * @author  wuyunfei
+ * @date    2017-10-2
+ * @version V 1.0
+ * @email   1151815317@qq.com
+ */
+
+.container {
+	padding: 0.75rem 0.75rem;  //30px
+	background-color: #fafafa;
+	max-width: 885px;
+	margin: 0 auto;
+	p {
+		text-align: left;
+		font-size: 0.25rem; //10
+		color: #666;
+		margin: 0.25rem 0;  // 10 0
+		line-height: 0.55rem; //22
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.details {
+		.row {
+			.right {
+				margin-left: 30px;
+			}
+			.left {
+				font-weight: 600;
+			}
+		}
+	}
+	.edu-modules,
+	.work-modules {
+		.details {
+			.row {
+				.left {
+					display: inline-block;
+					img {
+						width: 46px;
+						height: 46px;
+						display: inline-block;
+					}				
+				}
+				.right {
+					margin-left: 0px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.work-modules {
+		.small-title {
+			font-weight: 600;
+		}
+	}
+
+	.self-assessment {
+		ul {
+			margin-left: 15px;
+			font-size: 0.25rem; // 10
+			line-height: 0.25rem;
+			color: #666;
+			li {
+				padding: 5px 0;
+			}
+		}
+	}
+
+	.skills {
+		.area-name {
+			width: 30%;			
+			display: table-cell;
+			font-weight: 600;
+			vertical-align: top;
+			font-size: 0.25rem; // 10
+			div {
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+		}
+		.area-value {
+			width: 70%;
+			display: table-cell;
+		}
+		.top {
+			margin-bottom: 30px;
+		}
+		ul {
+			list-style: none;
+			li {
+				font-size: 0.225rem; // 9
+				color: #666;
+				display: block;
+				float: left;
+				padding: 5px 10px;
+				border: 1px solid #66ccff;
+				border-radius: 20px;
+				margin: 5px 5px;
+			}
+		}
+	}
+
+	.header {
+		.img-wrap {		
+			img {
+				display: block;
+				width: 3.0rem; //120
+				height: auto;
+				border-radius: 50%;
+				border: 4px solid #66ccff;
+				margin: 0 auto;
+			}
+		}
+		p {
+			text-align: center;
+		}
+
+
+		.m-name {
+			font-size: 0.8rem; //32
+			color: #000;
+		}
+		.m-job {
+			font-size: 0.5rem; //20
+			color: #000;
+		}
+	}
+
+	// 主体部分的title
+	.title {
+		height: 1px;
+		background-color: #ededed;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		position: relative;
+		font-size: 26px;
+		text-align: center;
+		.theme {
+			position: absolute;
+			top: -16px;
+			left: 50%;
+			transform: translate(-50%,0);
+			// box-sizing: border-box;
+			display: inline-block;
+			border-radius: 26px;
+			font-size: 18px; //18px
+			padding: 5px 24px;
+			color: #666;
+			background-color: #eee;
+			&:before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: -16.5%;
+				width: 20px;
+				height: 20px;
+				background-color: #fafafa;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				right: -17%;;
+				width: 20px;
+				height: 20px;
+				background-color: #fafafa;
+			}
+			
+		}	
+	}
+
+	.information {
+		p {
+			text-align: left;
+		}
+	}
+
+	.sidebar {
+		display: none;
+		width: 23%;
+		float: left;
+		position: fixed;
+		right: 30px;
+		top: 51px;
+		color: #666;
+		ul {
+			list-style: none;
+			font-size: 16px;
+			padding: 0 15px;
+			li {
+				height: 50px;
+				line-height: 50px;
+				cursor: pointer;
+				.icon-xueli {
+					margin-left: -3px;
+				}
+				.word {
+					margin-left: 30px;
+					font-size: 14px;
+				}
+				&:hover {
+					background-color: #fafafa;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+	.container {
+		.details {
+			.row {
+				display: inline-block;
+				width: 50%;
+				margin-right: -10px;
+			}
+		}
+
+		p {
+			font-size: 0.35rem; // 14px
+		}
+		
+		.self-assessment {
+			ul {
+				margin-left: 15px;
+				font-size: 0.4rem; // 16
+				line-height: 0.4rem;
+			}
+		}
+		
+		.edu-modules {
+			.details {
+				.row {
+					display: block;
+					margin: 0 auto;
+					width: 100%;
+				}
+			}
+		}
+
+		.work-modules {
+			.details {
+				.row {
+					width: 100%;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.skills {
+			.area-name {
+				font-size: 0.4rem; // 16
+			}
+
+			ul {
+				li {
+					font-size: 0.35rem; // 14
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 705px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 885px;
+		margin-left: 120px;
+		.sidebar {
+			display: block;
+			li {
+				padding-left: 30px;
+			}
+			.active {
+				
+				border-left: 2px solid #00b88d;
+				color: #00b88d;
+			}
+		}
+	}
+}
+
+@media (min-width: 1430px) {
+	.container {
+		width: 985px;
+		margin-left: 170px;
+		.sidebar {
+			display: block;
+			li {
+				padding-left: 30px;
+			}
+			.active {
+				
+				border-left: 2px solid #00b88d;
+				color: #00b88d;
+			}
+		}
+	}	
+}
+
+@media (min-width: 1800px) {
+	.container {
+		width: 1400px;
+		margin-left: 300px;
+		.sidebar {
+			display: block;
+			li {
+				padding-left: 30px;
+			}
+			.active {
+				
+				border-left: 2px solid #00b88d;
+				color: #00b88d;
+			}
+		}
+	}	
+}

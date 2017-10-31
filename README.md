@@ -1,0 +1,5 @@
+- 已将开发环境与生产环境分离
+- 页面公共部分（头部）用gulp的fileinclude插件管理
+- 资源用webpack打包
+- 个人小网站，下班后编写，正在开发中。
+- 地址：https://miaoyuxinbaby.github.io/myWebsite/build/index.html

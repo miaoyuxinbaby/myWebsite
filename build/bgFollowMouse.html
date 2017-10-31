@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>yoshino</title>
+<link rel="shortcut icon" href="/myWebsite/build/favicon.ico"><link href="/myWebsite/build/css/bgFollowMouse.css" rel="stylesheet"></head>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
+<body>
+    <header>
+	<nav class="nav-wrapper">
+		<a href="./index.html" class="logo">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAmCAMAAABH772WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTA2QzQ5MjRFQTNFNzExOTM2QUM3NjExMTdFOTdCNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNUREOTY0MUEzNEUxMUU3OEI4N0ZDMjIxMUM0OUUxQSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNUREOTY0MEEzNEUxMUU3OEI4N0ZDMjIxMUM0OUUxQSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjIyMDZDNDkyNEVBM0U3MTE5MzZBQzc2MTExN0U5N0I0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxMDZDNDkyNEVBM0U3MTE5MzZBQzc2MTExN0U5N0I0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+a0Z5mgAAAAZQTFRFZsz/+//++Zro+wAAALBJREFUeNrs1UsShCAMRdGb/W/ari6B5IX4H8IAFeMBNUbsdWMRiygIukUToQ3+d2AMjJ4J8RsER5CJ0ffgGCmr6SdkI8GJQC44JPykY0Jmt5kJF9wIu0bEZXuCawQlYUrYFwQlwZwwJfxzy8f3CHhMSPq8JEgJIa+vItwn9jlhpwR3CJSIiTkj9ogYHAkiYYcEJeErolsxSDXpwYQSOooTp4TFYvisGrN+RYuo2ybAAMBaCC8sFrDhAAAAAElFTkSuQmCC" alt="这是网站logo">
+		</a>
+		<a class="menu icon-mulu iconfont"></a>
+		<a href='./aboutme.html' class="about-me">关于本站</a>
+		<ul>
+			<li><a href="./index.html">首页</a></li>
+			<li><a href="./resume.html">简历</a></li>
+			<li><a href="https://github.com/miaoyuxinbaby" target='_blank'>GitHub</a></li>
+			<li><a href="./myComponents">组件</a></li>
+			<li><a href="http://localhost:8080/blog/index.html">博客</a></li>
+		</ul>
+	</nav>
+</header>
+    <section class="container-fluid trf-roateY-list total-wrap">
+        <div class="container">
+            <h2 class="title">组件库</h2>
+            <div class="sub-title">
+                鼠标悬浮出现背面的内容
+                <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+            </div>
+            <ul id="da-thumbs" class="da-thumbs clearfix mt30">
+                <li>
+                    <a target="_blank" title="哪合伙">
+				        <img src="/myWebsite/build/images/24547_big-7e4ff.jpg" class="img-responsive">
+				        <div>
+				          <h3><span>哪合伙</span></h3>
+				            <p>言必行  行必果</p>
+				            <p>言必行  行必果</p>
+				            <p>言必行  行必果</p>
+				        </div>
+			        </a>
+                </li>
+                <li>
+                    <a target="_blank" title="国太投资控股（集团）有限公司">
+				        <img src="data:image/jpeg;base64,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" class="img-responsive">
+				        <div>
+				          <h3><span>国太投资控股公司</span></h3>
+				            <p>以科学发展实现永续经营</p>
+				            <p>以科学发展实现永续经营</p>
+				            <p>以科学发展实现永续经营</p>
+				            <p>以科学发展实现永续经营</p>
+				        </div>
+			        </a>
+                </li>
+                <li>
+                    <a target="_blank" title="也买（上海）商贸有限公司">
+				        <img src="/myWebsite/build/images/21367_big-e380a.jpg" class="img-responsive">
+				        <div>
+				          <h3><span>也买商贸有限公司</span></h3>
+				            <p>全球第一，因为有你！</p>
+				            <p>全球第一，因为有你！</p>
+				            <p>全球第一，因为有你！</p>
+				        </div>
+			        </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+<script type="text/javascript" src="/myWebsite/build/js/vendors.js"></script><script type="text/javascript" src="/myWebsite/build/js/bgFollowMouse.js"></script></body>
+</html>

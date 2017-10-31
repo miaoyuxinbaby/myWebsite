@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>yoshino</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+@@include('./header.html')
+<section class="container-fluid total-wrap">
+    <div class="container">
+        <h2 class="title mb15">组件库</h2>
+        <div class="sub-title">
+            纯CSS实现响应式表格,快缩小浏览器试试，可以缩到手机大小~
+            <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+        </div>
+        <table class="full-width mt25">
+            <thead>
+                <tr>
+                    <th>Payment</th>
+                    <th>Issue Date</th>
+                    <th>Amount</th>
+                    <th>Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Payment">Payment #1</td>
+                    <td data-label="Issue Date">02/01/2015</td>
+                    <td data-label="Amount">$2,311</td>
+                    <td data-label="Period">01/01/2015 - 01/31/2015</td>
+                </tr>
+                <tr>
+                    <td data-label="Payment">Payment #2</td>
+                    <td data-label="Issue Date">03/01/2015</td>
+                    <td data-label="Amount">$3,211</td>
+                    <td data-label="Period">02/01/2015 - 02/28/2015</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+
+</html>
